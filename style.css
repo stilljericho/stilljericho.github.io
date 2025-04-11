@@ -1,90 +1,156 @@
-/* Font stuff */
+/* =============================
+   Font: Linux Libertine (Local)
+   ============================= */
+
+/* Core Styles */
 @font-face {
   font-family: 'Linux Libertine';
   src: url('./fonts/LinLibertine_R.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Linux Libertine';
   src: url('./fonts/LinLibertine_RB.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
-/* General Body Styles */
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('./fonts/LinLibertine_RI.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine';
+  src: url('./fonts/LinLibertine_RBI.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Optional Alternates */
+@font-face {
+  font-family: 'Linux Libertine Display';
+  src: url('./fonts/LinLibertine_DR.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Italic';
+  src: url('./fonts/LinLibertine_I.ttf') format('truetype');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Expert';
+  src: url('./fonts/LinLibertine_RZ.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine Expert Italic';
+  src: url('./fonts/LinLibertine_RZI.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Small Caps';
+  src: url('./fonts/LinLibertine_aS.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine Small Caps Italic';
+  src: url('./fonts/LinLibertine_aSI.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Linux Libertine Alt Bold';
+  src: url('./fonts/LinLibertine_aBL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Linux Libertine Alt Super';
+  src: url('./fonts/LinLibertine_aSZI.ttf') format('truetype');
+}
+
+
+/* ======================
+   General Body Styles
+   ====================== */
 body {
-    font-family: 'Linux Libertine', serif;
-    background-color: #f4f1ed; /* Subtle newsprint beige tone */
-    color: #2b2b2b;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+  font-family: 'Linux Libertine', serif;
+  background-color: #f0f0f0;  /* Light grey background */
+  color: #333;  /* Dark text color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* Container for content */
 .container {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 4px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    width: 100%;
-    max-width: 720px;
-    line-height: 1.75;
-    border: 1px solid #dcdcdc;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
 }
 
 /* Headings and Text */
-h1 {
-    font-size: 2.25rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #1a1a1a;
+h1, h2 {
+  color: #333;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 h2 {
-    font-size: 1.5rem;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: #444;
+  margin-top: 20px;
+  color: #555;
 }
 
 p {
-    font-size: 1.05rem;
-    margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 /* Links */
 a {
-    color: #0056a3;
-    text-decoration: none;
-    border-bottom: 1px dotted #0056a3;
-    transition: border 0.2s ease;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 a:hover {
-    border-bottom: 1px solid #0056a3;
+  text-decoration: underline;
 }
 
 /* Styling the About Section */
 .about-section {
-    background-color: #fdf9f5;
-    padding: 25px;
-    color: #2a2a2a;
-    border-left: 4px solid #999;
-    margin-top: 40px;
-    text-align: left;
-    border-radius: 4px;
+  background-color: #3498db;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .about-section h2 {
-    font-size: 1.4rem;
-    margin-top: 0;
+  font-size: 24px;
 }
 
 .about-section p {
-    font-size: 1rem;
-    margin: 10px 0 0 0;
+  font-size: 16px;
+}
+
+/* Optional: Small Caps Example */
+.smallcaps {
+  font-family: 'Linux Libertine Small Caps', serif;
+  letter-spacing: 0.05em;
+  text-transform: lowercase; /* Optional for effect */
 }
