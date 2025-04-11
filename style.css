@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 /* =============================
    Font: Linux Libertine (Local)
    ============================= */
@@ -187,11 +189,12 @@ a:hover {
 }
 
 .signature {
-  font-family: 'Linux Libertine Italic', cursive, serif;
-  font-size: 3rem;
-  font-style: italic;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em;
   color: #333;
-  margin: 0;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .navbar {
