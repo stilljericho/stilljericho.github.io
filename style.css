@@ -91,7 +91,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 /* Container for content */
@@ -154,3 +153,31 @@ a:hover {
   letter-spacing: 0.05em;
   text-transform: lowercase; /* Optional for effect */
 }
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: 'Linux Libertine', serif;
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
