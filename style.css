@@ -176,3 +176,29 @@ a:hover {
   letter-spacing: 0.05em;
   text-transform: lowercase;
 }
+
+/* Header Styles */
+.site-header {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px 20px 10px;
+  border-bottom: 1px solid #ddd;
+  margin-top: 0;
+}
+
+.signature {
+  font-family: 'Linux Libertine Italic', cursive, serif;
+  font-size: 3rem;
+  font-style: italic;
+  color: #333;
+  margin: 0;
+}
+
+.navbar {
+  margin-top: 0;
+  border-top: none;
+  border-bottom: 1px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
