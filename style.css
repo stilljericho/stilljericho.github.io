@@ -2,7 +2,6 @@
    Font: Linux Libertine (Local)
    ============================= */
 
-/* Core Styles */
 @font-face {
   font-family: 'Linux Libertine';
   src: url('./fonts/LinLibertine_R.ttf') format('truetype');
@@ -31,130 +30,117 @@
   font-style: italic;
 }
 
-/* Optional Alternates */
-@font-face {
-  font-family: 'Linux Libertine Display';
-  src: url('./fonts/LinLibertine_DR.ttf') format('truetype');
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Linux Libertine Italic';
-  src: url('./fonts/LinLibertine_I.ttf') format('truetype');
-  font-style: italic;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: 'Linux Libertine Expert';
-  src: url('./fonts/LinLibertine_RZ.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Linux Libertine Expert Italic';
-  src: url('./fonts/LinLibertine_RZI.ttf') format('truetype');
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Linux Libertine Small Caps';
-  src: url('./fonts/LinLibertine_aS.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Linux Libertine Small Caps Italic';
-  src: url('./fonts/LinLibertine_aSI.ttf') format('truetype');
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Linux Libertine Alt Bold';
-  src: url('./fonts/LinLibertine_aBL.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Linux Libertine Alt Super';
-  src: url('./fonts/LinLibertine_aSZI.ttf') format('truetype');
-}
-
 /* ======================
    General Body Styles
    ====================== */
 body {
   font-family: 'Linux Libertine', serif;
   background-color: #fdfcf8; /* Off-white, paper-like */
-  color: #333;  /* Dark text color */
+  color: #333;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-/* Header Section */
-.header {
+/* ======================
+   Header Section
+   ====================== */
+header {
+  background-color: #ffffff;
   text-align: center;
-  margin-top: 40px;
+  padding: 60px 20px 30px;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ddd;
 }
 
-.header h1 {
-  font-family: 'Linux Libertine', serif;
-  font-size: 3em;
-  color: #333;
+header h1 {
+  font-size: 3rem;
   margin: 0;
+  color: #111;
+  font-weight: bold;
+  font-family: 'Linux Libertine', serif;
 }
 
-.header h2 {
-  font-family: 'Linux Libertine', serif;
-  font-size: 1.6em;
+header p {
+  font-size: 1.25rem;
   color: #555;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
-.header .byline {
+/* ======================
+   Navigation Bar
+   ====================== */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
   font-family: 'Linux Libertine', serif;
-  font-style: italic;
-  font-size: 1.1em;
-  color: #777;
 }
 
-/* Container for content */
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* ======================
+   Content Container
+   ====================== */
 .container {
   background-color: white;
   padding: 40px;
-  padding-top: 100px; /* Gives space below the fixed navbar */
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
   width: 60%;
-  max-width: 700px;
+  max-width: 720px;
   text-align: left;
   font-size: 1.1em;
   line-height: 1.7;
 }
 
-/* Headings and Text */
-h1, h2 {
+/* ======================
+   Headings and Text
+   ====================== */
+h1, h2, h3 {
   font-family: 'Linux Libertine', serif;
-  color: #333;
+  color: #222;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  margin-top: 20px;
-  color: #555;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  color: #444;
 }
 
 p {
   font-family: 'Linux Libertine', serif;
-  font-size: 17px;
-  line-height: 1.7;
+  font-size: 1.1rem;
   color: #222;
+  margin-bottom: 1rem;
 }
 
-/* Links */
+/* ======================
+   Links
+   ====================== */
 a {
-  color: #3498db;
+  color: #005f9e;
   text-decoration: none;
   font-weight: bold;
 }
@@ -163,7 +149,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Styling the About Section */
+/* ======================
+   About Section
+   ====================== */
 .about-section {
   background-color: #3498db;
   padding: 20px;
@@ -180,36 +168,11 @@ a:hover {
   font-size: 16px;
 }
 
-/* Optional: Small Caps Example */
+/* ======================
+   Optional Small Caps
+   ====================== */
 .smallcaps {
   font-family: 'Linux Libertine Small Caps', serif;
   letter-spacing: 0.05em;
-  text-transform: lowercase; /* Optional for effect */
-}
-
-/* Navigation Bar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  background-color: #ffffff;
-  padding: 15px;
-  border-bottom: 1px solid #ccc;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  font-family: 'Linux Libertine', serif;
-}
-
-.navbar a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.navbar a:hover {
-  background-color: #e0e0e0;
-  border-radius: 4px;
+  text-transform: lowercase;
 }
