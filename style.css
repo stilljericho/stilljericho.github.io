@@ -37,7 +37,7 @@
    ====================== */
 body {
   font-family: 'Linux Libertine', serif;
-  background-color: #fdfcf8; /* Off-white, paper-like */
+  background: linear-gradient(to bottom, #fdfcf8, #f5f0e6); /* Soft paper-toned gradient */
   color: #333;
   margin: 0;
   padding: 0;
