@@ -84,7 +84,7 @@
    ====================== */
 body {
   font-family: 'Linux Libertine', serif;
-  background-color: #f0f0f0;  /* Light grey background */
+  background-color: #fdfcf8; /* Off-white, paper-like */
   color: #333;  /* Dark text color */
   margin: 0;
   padding: 0;
@@ -116,7 +116,10 @@ h2 {
 }
 
 p {
-  line-height: 1.6;
+    font-family: 'Linux Libertine', serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
 }
 
 /* Links */
