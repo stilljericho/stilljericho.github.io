@@ -37,7 +37,8 @@
    ====================== */
 body {
   font-family: 'Linux Libertine', serif;
-  background: linear-gradient(to bottom, #f5e8d4, #f0e0c9); /* Warmer, more distinct gradient */
+  background-color: #f2e6d6; /* Light vintage paper color */
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0) 40%, rgba(0, 0, 0, 0.1) 100%);
   color: #333;
   margin: 0;
   padding: 0;
