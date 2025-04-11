@@ -78,7 +78,6 @@
   src: url('./fonts/LinLibertine_aSZI.ttf') format('truetype');
 }
 
-
 /* ======================
    General Body Styles
    ====================== */
@@ -91,26 +90,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.header h1 {
+  font-family: 'Linux Libertine', serif;
+  font-size: 3em;
+  color: #333;
+  margin: 0;
+}
+
+.header h2 {
+  font-family: 'Linux Libertine', serif;
+  font-size: 1.6em;
+  color: #555;
+  margin: 10px 0;
+}
+
+.header .byline {
+  font-family: 'Linux Libertine', serif;
+  font-style: italic;
+  font-size: 1.1em;
+  color: #777;
 }
 
 /* Container for content */
 .container {
-    background-color: white;
-    padding: 40px;
-    padding-top: 100px; /* Gives space below the fixed navbar */
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    max-width: 700px;
-    text-align: left;
-    font-size: 1.1em;
-    line-height: 1.7;
+  background-color: white;
+  padding: 40px;
+  padding-top: 100px; /* Gives space below the fixed navbar */
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  max-width: 700px;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.7;
 }
 
 /* Headings and Text */
 h1, h2 {
-    font-family: 'Linux Libertine', serif;
-    color: #333;
+  font-family: 'Linux Libertine', serif;
+  color: #333;
 }
 
 h2 {
@@ -119,10 +146,10 @@ h2 {
 }
 
 p {
-    font-family: 'Linux Libertine', serif;
-    font-size: 17px;
-    line-height: 1.7;
-    color: #222;
+  font-family: 'Linux Libertine', serif;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #222;
 }
 
 /* Links */
@@ -186,4 +213,3 @@ a:hover {
   background-color: #e0e0e0;
   border-radius: 4px;
 }
-
